@@ -1,0 +1,13 @@
+<?php
+
+declare(strict_types=1);
+
+namespace A3Naumov\CloudDriveCore\Infrastructure\Contract\Factory\Entity;
+
+use A3Naumov\CloudDriveCore\Infrastructure\Contract\Dto\Drive\DriveDtoInterface;
+use A3Naumov\CloudDriveCore\Infrastructure\Contract\Entity\DriveInterface;
+
+interface DriveFactoryInterface
+{
+    public function create(DriveDtoInterface $driveDto): DriveInterface;
+}

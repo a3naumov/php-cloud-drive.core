@@ -1,0 +1,12 @@
+<?php
+
+declare(strict_types=1);
+
+namespace A3Naumov\CloudDriveCore\Application\Contract\UseCase\Drive\Create;
+
+interface CommandInterface
+{
+    public function getName(): string;
+
+    public function getDriver(): string;
+}
