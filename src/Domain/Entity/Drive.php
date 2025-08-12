@@ -46,6 +46,8 @@ class Drive implements DriveInterface
             throw new ResourceNotFoundException();
         }
 
+        $this->driver->addResource(drive: $this, resource: $resource);
+
         return $this;
     }
 }
